@@ -1,0 +1,16 @@
+[
+  {
+    "section": "Part I: Foundations",
+    "items": [
+      { "id": "chapter1", "title": "Chapter 1: Introduction", "file": "chapter1.md" },
+      { "id": "chapter2", "title": "Chapter 2: The Journey Begins", "file": "chapter2.md" }
+    ]
+  },
+  {
+    "section": "Part II: Insights",
+    "items": [
+      { "id": "chapter3", "title": "Chapter 3: Deep Insights", "file": "chapter3.md" },
+      { "id": "chapter4", "title": "Chapter 4: Final Thoughts", "file": "chapter4.md" }
+    ]
+  }
+]

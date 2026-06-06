@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Book</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Markdown parser om -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+<div id="app">
+  <!-- LEFT: Sidebar -->
+  <aside id="sidebar">
+    <header class="sidebar-header">
+      <h1>My Book</h1>
+      <button id="themeToggle">🌙</button>
+    </header>
+
+    <div class="search-box">
+      <input id="searchInput" type="text" placeholder="Search chapters...">
+    </div>
+
+    <nav id="toc"></nav>
+  </aside>
+
+  <!-- RIGHT: Content -->
+  <main id="main">
+    <div id="contentHeader">
+      <h2 id="chapterTitle">Welcome</h2>
+      <div class="nav-buttons">
+        <button id="prevBtn" disabled>← Previous</button>
+        <button id="nextBtn" disabled>Next →</button>
+      </div>
+    </div>
+    <article id="content">
+      <p>Select a chapter from the left to begin reading.</p>
+    </article>
+  </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
