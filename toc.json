@@ -1,8 +1,8 @@
 [
   {
-    "section": "Home",
+    "section": "Intro",
     "items": [
-      { "id": "home", "title": "🏠 Home", "file": "home.html" }
+      { "id": "home", "title": " ", "file": "home.html" }
     ]
   },
   {

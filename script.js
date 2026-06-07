@@ -75,21 +75,21 @@ async function loadChapterById(id) {
   const parser = new DOMParser();
 
 // Remove UTF-8 BOM
-if (text.charCodeAt(0) === 0xFEFF) {
-    text = text.slice(1);
-}
+// if (text.charCodeAt(0) === 0xFEFF) {
+//     text = text.slice(1);
+// }
 
-// Remove replacement characters
-text = text.replace(/^\uFFFD+/, "");
+// // Remove replacement characters
+// text = text.replace(/^\uFFFD+/, "");
 
   titleEl.textContent = chapter.title;
 
-    if (chapter.file.endsWith(".md")) {
-        contentEl.innerHTML = marked.parse(text);
-    } else {
-        //contentEl.innerHTML = parser.parseFromString(text, 'text/html').body.textContent;
-            document.getElementById("content").innerHTML = text;
-    }
+    // if (chapter.file.endsWith(".md")) {
+         contentEl.innerHTML = marked.parse(text);
+    // } else {
+    //     //contentEl.innerHTML = parser.parseFromString(text, 'text/html').body.textContent;
+    //         document.getElementById("content").innerHTML = text;
+    // }
  
   updateActiveTOC(id);
   updateNavButtons();
