@@ -72,13 +72,14 @@ async function loadChapterById(id) {
 
   const res = await fetch("./chapters/" + chapter.file);
   const text = await res.text();
+  const parser = new DOMParser();
 
   titleEl.textContent = chapter.title;
 
     if (chapter.file.endsWith(".md")) {
         contentEl.innerHTML = marked.parse(text);
     } else {
-        contentEl.innerHTML = text;
+        contentEl.innerHTML = parser.parseFromString(text, 'text/html').body.textContent;;
     }
 
   updateActiveTOC(id);
