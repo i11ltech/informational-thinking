@@ -87,7 +87,8 @@ async function loadChapterById(id) {
     if (chapter.file.endsWith(".md")) {
         contentEl.innerHTML = marked.parse(text);
     } else {
-        contentEl.innerHTML = parser.parseFromString(text, 'text/html').body.textContent;
+        //contentEl.innerHTML = parser.parseFromString(text, 'text/html').body.textContent;
+            document.getElementById("content").innerHTML = text;
     }
 
   updateActiveTOC(id);
