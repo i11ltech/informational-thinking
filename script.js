@@ -22,7 +22,6 @@ async function init() {
 
   renderTOC(tocData);
 
-  //test
   // Load home page by default
   loadChapterById("home");
 }
@@ -79,7 +78,7 @@ async function loadChapterById(id) {
     if (chapter.file.endsWith(".md")) {
         contentEl.innerHTML = marked.parse(text);
     } else {
-        contentEl.innerHTML = text;
+        contentEl.innerHTML = Document.parseHTMLUnsafe(text);
     }
 
   updateActiveTOC(id);
