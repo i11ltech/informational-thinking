@@ -74,7 +74,7 @@ async function loadChapterById(id) {
   var text = await res.text();
   const parser = new DOMParser();
 
-// Remove UTF-8 BOM
+// // Remove UTF-8 BOM
 // if (text.charCodeAt(0) === 0xFEFF) {
 //     text = text.slice(1);
 // }
@@ -82,7 +82,7 @@ async function loadChapterById(id) {
 // // Remove replacement characters
 // text = text.replace(/^\uFFFD+/, "");
 
-  titleEl.textContent = chapter.title;
+    titleEl.textContent = chapter.title;
 
     // if (chapter.file.endsWith(".md")) {
          contentEl.innerHTML = marked.parse(text);

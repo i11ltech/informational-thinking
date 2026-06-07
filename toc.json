@@ -2,7 +2,7 @@
   {
     "section": "Intro",
     "items": [
-      { "id": "home", "title": " ", "file": "home.html" }
+      { "id": "home", "title": " ", "file": "home.md" }
     ]
   },
   {
