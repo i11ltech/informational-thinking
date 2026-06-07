@@ -1,4 +1,3 @@
-# Welcome to My Book
 
 <div style="text-align:center;">
   <img src="../assets/hero.png" alt="Main Image" style="width:50%; border-radius:8px;">
