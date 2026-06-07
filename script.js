@@ -90,7 +90,6 @@ text = text.replace(/^\uFFFD+/, "");
         //contentEl.innerHTML = parser.parseFromString(text, 'text/html').body.textContent;
             document.getElementById("content").innerHTML = text;
     }
-console.log(text); 
  
   updateActiveTOC(id);
   updateNavButtons();
