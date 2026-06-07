@@ -22,6 +22,7 @@ async function init() {
 
   renderTOC(tocData);
 
+  //test
   // Load home page by default
   loadChapterById("home");
 }
