@@ -73,14 +73,6 @@ async function loadChapterById(id) {
   const res = await fetch("./chapters/" + chapter.file);
   var text = await res.text();
   const parser = new DOMParser();
-    // Remove escaped quotes
-    text = text.replace(/\\"/g, '"');
-
-    // Remove literal empty quotes
-    text = text.replace(/""/g, "");
-
-    // Remove outer quotes if present
-    text = text.replace(/^"(.*)"$/, "$1");
 
 // Remove UTF-8 BOM
 if (text.charCodeAt(0) === 0xFEFF) {
