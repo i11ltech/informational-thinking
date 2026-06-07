@@ -8,7 +8,7 @@
   {
     "section": "Part I: Choose the Right Thing",
     "items": [
-      { "id": "chapter1", "title": "1: Introduction", "file": "chapter1.md" },
+      { "id": "chapter1", "title": "1: Product", "file": "chapter1.md" },
       { "id": "chapter2", "title": "2: Strategies", "file": "chapter2.md" }
     ]
   },

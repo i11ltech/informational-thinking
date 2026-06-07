@@ -11,6 +11,7 @@ const searchInput = document.getElementById("searchInput");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
 const themeToggle = document.getElementById("themeToggle");
+const homeBtn = document.getElementById("homeBtn");
 
 async function init() {
   const res = await fetch("toc.json");
@@ -129,7 +130,6 @@ themeToggle.onclick = () => {
   themeToggle.textContent = next === "dark" ? "🌙" : "☀️";
 };
 
-const homeBtn = document.getElementById("homeBtn");
 
 homeBtn.onclick = () => {
   loadChapterById("home");
