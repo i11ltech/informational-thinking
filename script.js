@@ -73,13 +73,21 @@ async function loadChapterById(id) {
   const res = await fetch("./chapters/" + chapter.file);
   const text = await res.text();
   const parser = new DOMParser();
+// Remove escaped quotes
+text = text.replace(/\\"/g, '"');
+
+// Remove literal empty quotes
+text = text.replace(/""/g, "");
+
+// Remove outer quotes if present
+text = text.replace(/^"(.*)"$/, "$1");
 
   titleEl.textContent = chapter.title;
 
     if (chapter.file.endsWith(".md")) {
         contentEl.innerHTML = marked.parse(text);
     } else {
-        contentEl.innerHTML = parser.parseFromString(text, 'text/html').body.textContent;;
+        contentEl.innerHTML = parser.parseFromString(text, 'text/html').body.textContent;
     }
 
   updateActiveTOC(id);
