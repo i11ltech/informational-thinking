@@ -2,7 +2,7 @@
   {
     "section": "Home",
     "items": [
-      { "id": "home", "title": "🏠 Home", "file": "home.txt" }
+      { "id": "home", "title": "🏠 Home", "file": "home.md" }
     ]
   },
   {
