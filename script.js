@@ -71,16 +71,16 @@ async function loadChapterById(id) {
   const chapter = flatChapters[index];
 
   const res = await fetch("./chapters/" + chapter.file);
-  const text = await res.text();
+  var text = await res.text();
   const parser = new DOMParser();
-// Remove escaped quotes
-text = text.replace(/\\"/g, '"');
+    // Remove escaped quotes
+    text = text.replace(/\\"/g, '"');
 
-// Remove literal empty quotes
-text = text.replace(/""/g, "");
+    // Remove literal empty quotes
+    text = text.replace(/""/g, "");
 
-// Remove outer quotes if present
-text = text.replace(/^"(.*)"$/, "$1");
+    // Remove outer quotes if present
+    text = text.replace(/^"(.*)"$/, "$1");
 
   titleEl.textContent = chapter.title;
 
