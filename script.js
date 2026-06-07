@@ -82,6 +82,14 @@ async function loadChapterById(id) {
     // Remove outer quotes if present
     text = text.replace(/^"(.*)"$/, "$1");
 
+// Remove UTF-8 BOM
+if (text.charCodeAt(0) === 0xFEFF) {
+    text = text.slice(1);
+}
+
+// Remove replacement characters
+text = text.replace(/^\uFFFD+/, "");
+
   titleEl.textContent = chapter.title;
 
     if (chapter.file.endsWith(".md")) {
@@ -91,8 +99,7 @@ async function loadChapterById(id) {
             document.getElementById("content").innerHTML = text;
     }
 console.log(text); 
-console.log(parser.parseFromString(text, 'text/html').body.textContent)
-; 
+ 
   updateActiveTOC(id);
   updateNavButtons();
 }
