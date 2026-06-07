@@ -75,7 +75,7 @@ async function loadChapterById(id) {
 
   titleEl.textContent = chapter.title;
 
-    if (file.endsWith(".md")) {
+    if (chapter.file.endsWith(".md")) {
         contentEl.innerHTML = marked.parse(text);
     } else {
         contentEl.innerHTML = text;
