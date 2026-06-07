@@ -90,7 +90,9 @@ async function loadChapterById(id) {
         //contentEl.innerHTML = parser.parseFromString(text, 'text/html').body.textContent;
             document.getElementById("content").innerHTML = text;
     }
-
+console.log(text); 
+console.log(parser.parseFromString(text, 'text/html').body.textContent)
+; 
   updateActiveTOC(id);
   updateNavButtons();
 }
