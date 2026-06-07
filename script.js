@@ -20,6 +20,9 @@ async function init() {
   flatChapters = tocData.flatMap(section => section.items);
 
   renderTOC(tocData);
+
+  // Load home page by default
+  loadChapterById("home");
 }
 
 function renderTOC(data) {
@@ -124,6 +127,12 @@ themeToggle.onclick = () => {
   const next = current === "dark" ? "light" : "dark";
   document.documentElement.setAttribute("data-theme", next);
   themeToggle.textContent = next === "dark" ? "🌙" : "☀️";
+};
+
+const homeBtn = document.getElementById("homeBtn");
+
+homeBtn.onclick = () => {
+  loadChapterById("home");
 };
 
 init();

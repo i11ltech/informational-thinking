@@ -1,16 +1,22 @@
 [
   {
-    "section": "Part I: Foundations",
+    "section": "Home",
     "items": [
-      { "id": "chapter1", "title": "Chapter 1: Introduction", "file": "chapter1.md" },
-      { "id": "chapter2", "title": "Chapter 2: The Journey Begins", "file": "chapter2.md" }
+      { "id": "home", "title": "🏠 Home", "file": "home.md" }
     ]
   },
   {
-    "section": "Part II: Insights",
+    "section": "Part I: Choose the Right Thing",
     "items": [
-      { "id": "chapter3", "title": "Chapter 3: Deep Insights", "file": "chapter3.md" },
-      { "id": "chapter4", "title": "Chapter 4: Final Thoughts", "file": "chapter4.md" }
+      { "id": "chapter1", "title": "1: Introduction", "file": "chapter1.md" },
+      { "id": "chapter2", "title": "2: Strategies", "file": "chapter2.md" }
+    ]
+  },
+  {
+    "section": "Part II: Do the Thing Right",
+    "items": [
+      { "id": "chapter3", "title": "3: Process", "file": "chapter3.md" },
+      { "id": "chapter4", "title": "4: Tactics", "file": "chapter4.md" }
     ]
   }
 ]
