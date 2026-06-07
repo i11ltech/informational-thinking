@@ -78,7 +78,7 @@ async function loadChapterById(id) {
     if (chapter.file.endsWith(".md")) {
         contentEl.innerHTML = marked.parse(text);
     } else {
-        contentEl.innerHTML = Document.parseHTMLUnsafe(text);
+        contentEl.innerHTML = text;
     }
 
   updateActiveTOC(id);
