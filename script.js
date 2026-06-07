@@ -70,7 +70,7 @@ async function loadChapterById(id) {
   currentIndex = index;
   const chapter = flatChapters[index];
 
-  const res = await fetch("chapters/" + chapter.file);
+  const res = await fetch("./chapters/" + chapter.file);
   const text = await res.text();
 
   titleEl.textContent = chapter.title;
