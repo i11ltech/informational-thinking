@@ -1,4 +1,0 @@
-# informational-thinking
-
-Om Gum Ganapathaye Namah
-

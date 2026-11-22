@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book · Informational Thinking</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js"></script>
+  <!-- Markdown parser -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body class="book-page">
+
+<header class="site-nav">
+  <nav class="site-links">
+    <a href="index.html" data-nav="home">Home</a>
+    <a href="book.html" data-nav="book">Book</a>
+    <a href="blog.html" data-nav="blog">Blog</a>
+    <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+  </nav>
+</header>
+
+<div id="app">
+  <!-- LEFT: Sidebar -->
+  <aside id="sidebar">
+    <div class="search-box">
+      <input id="searchInput" type="text" placeholder="Search chapters...">
+    </div>
+
+    <nav id="toc"></nav>
+  </aside>
+
+  <!-- RIGHT: Content -->
+  <main id="main">
+    <div id="contentHeader">
+      <div class="nav-buttons">
+        <button id="homeBtn">Intro</button>
+        <button id="prevBtn" disabled>← Previous</button>
+        <button id="nextBtn" disabled>Next →</button>
+      </div>
+    </div>
+    <article id="content">
+      <p>Select a chapter from the left to begin reading.</p>
+    </article>
+  </main>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>

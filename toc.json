@@ -2,21 +2,34 @@
   {
     "section": "Intro",
     "items": [
-      { "id": "home", "title": "The Thinking needed to build today's Information System", "file": "home.md" }
+      { "id": "about", "title": "About", "file": "about.md" },
+      { "id": "preface", "title": "Preface", "file": "preface.md" },
+      { "id": "metaphor", "title": "A Metaphor", "file": "metaphor.md" },
+      { "id": "glossary", "title": "Glossary", "file": "glossary.md" }
     ]
   },
   {
-    "section": "Part I: Choose the Right Thing",
+    "section": "Section A: Do Right thing - choose the right info",
     "items": [
-      { "id": "chapter1", "title": "1: Product", "file": "chapter1.md" },
-      { "id": "chapter2", "title": "2: Strategies", "file": "chapter2.md" }
+      { "id": "a0", "title": "Intro: Product Management Thinking", "file": "a0-product-management-thinking.md" },
+      { "id": "a1", "title": "I: Information vs Data", "file": "a1-information-vs-data.md" },
+      { "id": "a2", "title": "II: Steps to Information", "file": "a2-steps-towards-information.md" },
+      { "id": "a2a", "title": " II-A: Collect", "file": "a2a-collect.md" },
+      { "id": "a2b", "title": " II-B: Process", "file": "a2b-processing.md" },
+      { "id": "a2c", "title": " II-C: Organize", "file": "a2c-organizing.md" },
+      { "id": "a2d", "title": " II-D: Interpret", "file": "a2d-interpreting.md" },
+      { "id": "a2e", "title": " II-E: Structure", "file": "a2e-structuring.md" }
     ]
   },
   {
-    "section": "Part II: Do the Thing Right",
+    "section": "Section B: Do Thing right - use the info right",
     "items": [
-      { "id": "chapter3", "title": "3: Process", "file": "chapter3.md" },
-      { "id": "chapter4", "title": "4: Tactics", "file": "chapter4.md" }
+      { "id": "b0", "title": "Intro: Project Management Thinking", "file": "b0-project-management-thinking.md" },
+      { "id": "b1", "title": "I: Use of data and info", "file": "b1-use-of-data-and-info.md" },
+      { "id": "b2", "title": "II: Plan and Prepare", "file": "b2-plan-and-prepare.md" },
+      { "id": "b3", "title": "III: Execute and Monitor", "file": "b3-execute-and-monitor.md" },
+      { "id": "b4", "title": "IV: Review and Reflect", "file": "b4-review-and-reflect.md" },
+      { "id": "b5", "title": "V: Adapt and Iterate", "file": "b5-adapt-and-iterate.md" }
     ]
   }
 ]

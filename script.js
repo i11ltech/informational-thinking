@@ -1,48 +1,53 @@
+// Book reader. Each chapter is its own page: book.html#a1
+// Section headers in the sidebar only collapse/expand their chapters.
+
 let tocData = [];
 let flatChapters = [];
 let currentIndex = -1;
 
-document.documentElement.setAttribute("data-theme", "dark");
-
 const tocEl = document.getElementById("toc");
 const contentEl = document.getElementById("content");
-const titleEl = document.getElementById("chapterTitle");
 const searchInput = document.getElementById("searchInput");
 const prevBtn = document.getElementById("prevBtn");
 const nextBtn = document.getElementById("nextBtn");
-const themeToggle = document.getElementById("themeToggle");
 const homeBtn = document.getElementById("homeBtn");
+
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
 async function init() {
   const res = await fetch("toc.json");
   tocData = await res.json();
 
-  // Flatten chapters for navigation
   flatChapters = tocData.flatMap(section => section.items);
 
   renderTOC(tocData);
 
-  // Load home page by default
-  loadChapterById("home");
+  const fromHash = decodeURIComponent(location.hash.slice(1));
+  loadChapterById(flatChapters.some(ch => ch.id === fromHash) ? fromHash : "about");
 }
+
+window.addEventListener("hashchange", () => {
+  const id = decodeURIComponent(location.hash.slice(1));
+  if (flatChapters[currentIndex]?.id !== id) loadChapterById(id);
+});
 
 function renderTOC(data) {
   tocEl.innerHTML = "";
-  data.forEach((section, sIndex) => {
+  data.forEach(section => {
     const sectionDiv = document.createElement("div");
     sectionDiv.className = "toc-section";
 
     const header = document.createElement("div");
     header.className = "toc-section-header";
     header.innerHTML = `
-      <span class="toc-section-title">${section.section}</span>
+      <span class="toc-section-title">${esc(section.section)}</span>
       <span>▾</span>
     `;
 
     const itemsDiv = document.createElement("div");
     itemsDiv.className = "toc-items";
 
-    section.items.forEach((item, iIndex) => {
+    section.items.forEach(item => {
       const li = document.createElement("div");
       li.className = "toc-item";
       li.textContent = item.title;
@@ -71,26 +76,10 @@ async function loadChapterById(id) {
   const chapter = flatChapters[index];
 
   const res = await fetch("./chapters/" + chapter.file);
-  var text = await res.text();
-  const parser = new DOMParser();
+  contentEl.innerHTML = marked.parse(await res.text());
 
-// // Remove UTF-8 BOM
-// if (text.charCodeAt(0) === 0xFEFF) {
-//     text = text.slice(1);
-// }
-
-// // Remove replacement characters
-// text = text.replace(/^\uFFFD+/, "");
-
-    titleEl.textContent = chapter.title;
-
-    // if (chapter.file.endsWith(".md")) {
-         contentEl.innerHTML = marked.parse(text);
-    // } else {
-    //     //contentEl.innerHTML = parser.parseFromString(text, 'text/html').body.textContent;
-    //         document.getElementById("content").innerHTML = text;
-    // }
- 
+  if (location.hash.slice(1) !== id) history.replaceState(null, "", "#" + id);
+  contentEl.scrollTop = 0;
   updateActiveTOC(id);
   updateNavButtons();
 }
@@ -107,47 +96,27 @@ function updateNavButtons() {
 }
 
 prevBtn.onclick = () => {
-  if (currentIndex > 0) {
-    const prev = flatChapters[currentIndex - 1];
-    loadChapterById(prev.id);
-  }
+  if (currentIndex > 0) loadChapterById(flatChapters[currentIndex - 1].id);
 };
 
 nextBtn.onclick = () => {
-  if (currentIndex < flatChapters.length - 1) {
-    const next = flatChapters[currentIndex + 1];
-    loadChapterById(next.id);
-  }
+  if (currentIndex < flatChapters.length - 1) loadChapterById(flatChapters[currentIndex + 1].id);
 };
 
 searchInput.addEventListener("input", () => {
   const q = searchInput.value.toLowerCase();
   if (!q) {
     renderTOC(tocData);
-    if (currentIndex >= 0) updateActiveTOC(flatChapters[currentIndex].id);
-    return;
+  } else {
+    const filtered = tocData.map(section => ({
+      ...section,
+      items: section.items.filter(item => item.title.toLowerCase().includes(q))
+    })).filter(section => section.items.length > 0);
+    renderTOC(filtered);
   }
-
-  const filtered = tocData.map(section => ({
-    section: section.section,
-    items: section.items.filter(item =>
-      item.title.toLowerCase().includes(q)
-    )
-  })).filter(section => section.items.length > 0);
-
-  renderTOC(filtered);
+  if (currentIndex >= 0) updateActiveTOC(flatChapters[currentIndex].id);
 });
 
-themeToggle.onclick = () => {
-  const current = document.documentElement.getAttribute("data-theme");
-  const next = current === "dark" ? "light" : "dark";
-  document.documentElement.setAttribute("data-theme", next);
-  themeToggle.textContent = next === "dark" ? "🌙" : "☀️";
-};
-
-
-homeBtn.onclick = () => {
-  loadChapterById("home");
-};
+homeBtn.onclick = () => loadChapterById("about");
 
 init();

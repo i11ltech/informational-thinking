@@ -2,44 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Informational Thinking</title>
   <link rel="stylesheet" href="style.css">
-  <!-- Markdown parser om -->
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="site.js"></script>
 </head>
 <body>
 
-<div id="app">
-  <!-- LEFT: Sidebar -->
-  <aside id="sidebar">
-    <header class="sidebar-header">
-      <h1>Informational Thinking</h1>
-      <button id="themeToggle">🌙</button>
-    </header>
+<header class="site-nav">
+  <nav class="site-links">
+    <a href="index.html" data-nav="home">Home</a>
+    <a href="book.html" data-nav="book">Book</a>
+    <a href="blog.html" data-nav="blog">Blog</a>
+    <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+  </nav>
+</header>
 
-    <div class="search-box">
-      <input id="searchInput" type="text" placeholder="Search chapters...">
-    </div>
+<main class="page">
+  <section class="hero">
+    <h1>Informational Thinking</h1>
+    <p class="tagline">
+      Want to get better at AI?<br>
+      Improve your IQ (Informational Quotient)<br>
+      Write sharper prompts, Get smarter response<br>
+      because AI is only as smart as the context you give it
+    </p>
+    <img src="assets/hero.png" alt="Informational Thinking" class="hero-img">
+  </section>
 
-    <nav id="toc"></nav>
-  </aside>
+  <section class="cards">
+    <a class="card" href="book.html">
+      <h2>The Book</h2>
+      <p>The principles, in two sections: do the right thing, and do the thing right.</p>
+      <span class="card-cta">Start reading →</span>
+    </a>
+    <a class="card" href="blog.html">
+      <h2>The Blog</h2>
+      <p>Posts that take one idea from the book and apply it to a real situation.</p>
+      <span class="card-cta">Read the posts →</span>
+    </a>
+  </section>
+</main>
 
-  <!-- RIGHT: Content -->
-  <main id="main">
-    <div id="contentHeader">
-      <h2 id="chapterTitle">Data -> Information -> Knowledge</h2>
-      <div class="nav-buttons">
-        <button id="homeBtn">🏠 Home</button>
-        <button id="prevBtn" disabled>← Previous</button>
-        <button id="nextBtn" disabled>Next →</button>
-      </div>
-    </div>
-    <article id="content">
-      <p>Select a chapter from the left to begin reading.</p>
-    </article>
-  </main>
-</div>
+<footer class="site-footer">informationalthink.ing</footer>
 
-<script src="./script.js"></script>
 </body>
 </html>

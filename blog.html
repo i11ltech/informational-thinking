@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog · Informational Thinking</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="site.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+<header class="site-nav">
+  <nav class="site-links">
+    <a href="index.html" data-nav="home">Home</a>
+    <a href="book.html" data-nav="book">Book</a>
+    <a href="blog.html" data-nav="blog">Blog</a>
+    <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+  </nav>
+</header>
+
+<main class="page" id="blogRoot">
+  <p>Loading…</p>
+</main>
+
+<script>
+  // blog.html          -> list of posts (from blog/posts.json)
+  // blog.html?post=id  -> one post (blog/<file>.md)
+  const root = document.getElementById("blogRoot");
+  const postId = new URLSearchParams(location.search).get("post");
+
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+  async function run() {
+    const posts = await (await fetch("blog/posts.json")).json();
+
+    if (!postId) {
+      root.innerHTML = `
+        <h1>Blog</h1>
+        <ul class="post-list">
+          ${posts.map(p => `
+            <li>
+              <a href="blog.html?post=${encodeURIComponent(p.id)}">${esc(p.title)}</a>
+              ${p.date ? `<span class="post-date">${esc(p.date)}</span>` : ""}
+              ${p.summary ? `<p>${esc(p.summary)}</p>` : ""}
+            </li>`).join("")}
+        </ul>`;
+      return;
+    }
+
+    const post = posts.find(p => p.id === postId);
+    if (!post) {
+      root.innerHTML = `<p>Post not found. <a href="blog.html">Back to all posts</a></p>`;
+      return;
+    }
+    document.title = post.title + " · Informational Thinking";
+    const md = await (await fetch("blog/" + post.file)).text();
+    root.innerHTML = `
+      <p><a href="blog.html">← All posts</a></p>
+      ${post.chapter ? `<p class="post-chapter">From the book: <a href="book.html#${encodeURIComponent(post.chapter)}">${esc(post.chapter)}</a></p>` : ""}
+      <article class="post">${marked.parse(md)}</article>`;
+  }
+
+  run().catch(() => { root.innerHTML = "<p>Could not load posts.</p>"; });
+</script>
+</body>
+</html>
