@@ -5,6 +5,8 @@ AI can do a great deal, but only with the information you give it. Someone has t
 
 This site teaches that skill. It calls it *informational thinking*, and builds it the way you build a muscle: one habit at a time.
 
+How strong that muscle is, the site calls your *informational quotient*, or IQ. Working with AI makes it matter more than ever: AI is only as smart as the context you give it, so the quality of what you get back depends on your IQ. Every chapter is meant to raise it.
+
 
 
 ## The gap it closes

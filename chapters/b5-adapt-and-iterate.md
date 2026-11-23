@@ -47,7 +47,7 @@ Software teams once worked in long, fixed sequences, planning everything up fron
 
 This is where the book closes, and where the next cycle starts. Every round of adapting ends at a question: given what I now know, what do I need to decide next? That is where [Information vs Data](#a1) began.
 
-Doing the right thing and doing the thing right are not two stages you pass through once. They form a loop. Each time around, you choose information better because you have used it, and use it better because you chose it well.
+Doing the right thing and doing the thing right are not two stages you pass through once. They form a loop. Each time around, you choose information better because you have used it, and use it better because you chose it well. That is how your [informational quotient](#glossary) rises: not by reading about the loop, but by going around it.
 
 
 

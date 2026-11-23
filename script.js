@@ -1,5 +1,13 @@
 // Book reader. Each chapter is its own page: book.html#a1
 // Section headers in the sidebar only collapse/expand their chapters.
+// Shared by every book page. Each page sets its own sources on <body>:
+//   data-toc="toc.json"  data-chapters="./chapters/"  data-home="about"
+// (those are the defaults, used by book.html).
+
+const bookConfig = document.body.dataset;
+const TOC_URL = bookConfig.toc || "toc.json";
+const CHAPTER_DIR = bookConfig.chapters || "./chapters/";
+const HOME_ID = bookConfig.home || "about";
 
 let tocData = [];
 let flatChapters = [];
@@ -15,7 +23,7 @@ const homeBtn = document.getElementById("homeBtn");
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 
 async function init() {
-  const res = await fetch("toc.json");
+  const res = await fetch(TOC_URL);
   tocData = await res.json();
 
   flatChapters = tocData.flatMap(section => section.items);
@@ -23,7 +31,7 @@ async function init() {
   renderTOC(tocData);
 
   const fromHash = decodeURIComponent(location.hash.slice(1));
-  loadChapterById(flatChapters.some(ch => ch.id === fromHash) ? fromHash : "about");
+  loadChapterById(flatChapters.some(ch => ch.id === fromHash) ? fromHash : HOME_ID);
 }
 
 window.addEventListener("hashchange", () => {
@@ -75,7 +83,7 @@ async function loadChapterById(id) {
   currentIndex = index;
   const chapter = flatChapters[index];
 
-  const res = await fetch("./chapters/" + chapter.file);
+  const res = await fetch(CHAPTER_DIR + chapter.file);
   contentEl.innerHTML = marked.parse(await res.text());
 
   if (location.hash.slice(1) !== id) history.replaceState(null, "", "#" + id);
@@ -117,6 +125,6 @@ searchInput.addEventListener("input", () => {
   if (currentIndex >= 0) updateActiveTOC(flatChapters[currentIndex].id);
 });
 
-homeBtn.onclick = () => loadChapterById("about");
+homeBtn.onclick = () => loadChapterById(HOME_ID);
 
 init();

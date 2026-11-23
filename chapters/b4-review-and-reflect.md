@@ -28,7 +28,7 @@ The numbers tell you *what* happened: dishes served, budget spent, time taken. T
 
 When the outcome differs from the plan, find where the difference came from. The two sections of this book give you two places to look:
 
-* **The information was wrong.** The [Steps to Information](#a2) broke somewhere. You collected the convenient data, didn't check it, arranged it so the answer was hidden, read the pattern you expected, or buried the answer.
+* **The information was wrong.** A step in the [information lifecycle](#a2) broke. You collected the convenient data, didn't check it, arranged it so the answer was hidden, read the pattern you expected, or buried the answer.
 * **The information was right, but it was used wrong.** The action was unclear, the plan was missing a resource, or a warning was seen but not acted on.
 
 The fixes are different. Wrong information needs a better question or better data next time. Wrong use needs a better plan or closer monitoring.

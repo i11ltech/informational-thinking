@@ -13,7 +13,7 @@
     "items": [
       { "id": "a0", "title": "Intro: Product Management Thinking", "file": "a0-product-management-thinking.md" },
       { "id": "a1", "title": "I: Information vs Data", "file": "a1-information-vs-data.md" },
-      { "id": "a2", "title": "II: Steps to Information", "file": "a2-steps-towards-information.md" },
+      { "id": "a2", "title": "II: Information Lifecycle", "file": "a2-information-lifecycle.md" },
       { "id": "a2a", "title": " II-A: Collect", "file": "a2a-collect.md" },
       { "id": "a2b", "title": " II-B: Process", "file": "a2b-processing.md" },
       { "id": "a2c", "title": " II-C: Organize", "file": "a2c-organizing.md" },

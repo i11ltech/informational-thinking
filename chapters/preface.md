@@ -18,6 +18,8 @@ This book calls that skill *informational thinking*: the habit of turning data i
 * **Sense-making:** turning that data into insight. *Data* is recorded facts; it becomes *information* when it is placed in a context that answers a question. (Full definitions are in the [Glossary](#glossary).)
 * **Creativity:** using that information to build a solution that works.
 
+How well you do all three is your *informational quotient* (IQ). Unlike a score from a test, it grows with practice, and this book is a set of exercises for raising it.
+
 
 
 ## Borrow, don't reinvent
@@ -38,11 +40,11 @@ The book follows the two questions every piece of work has to answer.
 
 | | Section A: Do the right thing | Section B: Do the thing right |
 |---|---|---|
-| **Bridge discipline** | Product management | Project management |
-| **Core question** | What should we build, and why? | How and when will we deliver it? |
-| **Success looks like** | Adoption, retention, business return | On time, on budget, on scope |
-| **Where AI shifts it** | Designing probabilistic experiences and evaluations | Automating scheduling, risk forecasting and status tracking |
-| **Informational task** | Choose the right information | Use the information right |
+| **Bridge discipline** |       Product management | Project management |
+| **Core question** |       What should we build, and why? | How and when will we deliver it? |
+| **Success looks like** |      Adoption, retention, business return | On time, on budget, on scope |
+| **Where AI shifts it** |      Designing probabilistic experiences and evaluations | Automating scheduling, risk forecasting and status tracking |
+| **Informational task** |      Choose the right information | Use the information right |
 
 Order matters. Section A comes first because, as Russell Ackoff warned, "The righter we do the wrong thing, the wronger we become." Section A covers the steps from data to information: collect, process, organize, interpret and structure. Section B covers putting that information to work: plan, execute and monitor, review, and adapt.
 

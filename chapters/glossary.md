@@ -28,6 +28,13 @@ These terms follow the order of the book's argument: from raw data, through a de
 
 **Informational thinking:** The habit of turning data into information you can act on. It has three parts: an eye for detail (seeing the relevant data), sense-making (turning it into insight), and creativity (using it to build a solution that works).
 
+**Informational quotient (IQ):** Used in two related senses.
+
+* **Of a person:** how strong your informational thinking is: how well you find the relevant data, make sense of it and put it to use. It is a skill that grows with practice, not a score from a test. The same abbreviation as the intelligence quotient is deliberate: working with AI rewards this IQ as much as the other one.
+* **Of a message:** how much of the real situation a sentence or prompt carries. It builds on Claude Shannon's idea of information as reduced uncertainty. A sentence that could be dropped unchanged into a different meeting, such as "We need to move faster", has a low IQ. One that names the specific constraint, trade-off or sequence has a high IQ.
+
+The two are linked: a person with a high IQ writes messages and prompts with a high IQ.
+
 **Information need:** A gap in understanding that you try to fill with facts, data or ideas. Needs arise when you want to satisfy curiosity, make a decision, complete a task or solve a problem.
 
 **Information literacy:** In the American Library Association's definition, the ability to "recognize when information is needed and have the ability to locate, evaluate, and use effectively the needed information."

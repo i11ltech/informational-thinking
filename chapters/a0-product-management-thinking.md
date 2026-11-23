@@ -43,7 +43,7 @@ One classic habit bends here. In product management, evaluating a result usually
 ## What Section A covers
 
 * **[Information vs Data](#a1):** why the question comes before the data.
-* **[Steps to Information](#a2):** the five steps that turn data into information: [collect](#a2a), [process](#a2b), [organize](#a2c), [interpret](#a2d) and [structure](#a2e).
+* **[Information Lifecycle](#a2):** the five steps that turn data into information: [collect](#a2a), [process](#a2b), [organize](#a2c), [interpret](#a2d) and [structure](#a2e).
 
 
 

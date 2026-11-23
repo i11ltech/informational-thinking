@@ -1,4 +1,4 @@
-# Steps to Information
+# Information Lifecycle
 
 **Principle: data does not turn into information in one leap. It passes through five steps: collect, process, organize, interpret and structure. Each step answers a different question and fails in a different way, and the question you started from steers all five.**
 
