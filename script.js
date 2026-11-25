@@ -90,6 +90,19 @@ async function loadChapterById(id) {
   contentEl.scrollTop = 0;
   updateActiveTOC(id);
   updateNavButtons();
+  trackChapterView(chapter);
+}
+
+// Google Analytics: one page view per chapter, e.g. /book.html#a1 "Information vs Data".
+// The page's own automatic page view is switched off in its <head>, so nothing is counted twice.
+function trackChapterView(chapter) {
+  if (typeof gtag !== "function") return;
+  const page = location.pathname.split("/").pop() || "book.html";
+  gtag("event", "page_view", {
+    page_location: location.href,
+    page_path: "/" + page + "#" + chapter.id,
+    page_title: chapter.title.trim() + " · " + document.title
+  });
 }
 
 function updateActiveTOC(id) {

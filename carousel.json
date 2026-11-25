@@ -1,0 +1,162 @@
+[
+{
+"quote": "A useful prompt makes the important details impossible to miss.",
+"example": "“Create a one-page project update for senior leaders. Include the current status, the main risk, and the decision needed by Friday.”"
+},
+{
+"quote": "Clarity begins when you name the question you actually need answered.",
+"example": "Instead of “Tell me about our website,” ask “Which pages have the highest exit rates, and what should we investigate first?”"
+},
+{
+"quote": "More words don’t guarantee more information; relevant details do.",
+"example": "“Suggest three low-cost ways to reduce meeting overruns for a 12-person remote team” is more useful than a long description of the company that doesn’t affect the suggestions."
+},
+{
+"quote": "A precise question turns a broad topic into a workable task.",
+"example": "“Explain customer retention” becomes “List three reasons first-time subscribers may cancel within 30 days, and suggest one way to test each reason.”"
+},
+{
+"quote": "Good thinking separates what is known from what is assumed.",
+"example": "“Known: orders fell 8% this month. Assumption: the new checkout page contributed. Suggest data we should check before drawing a conclusion.”"
+},
+{
+"quote": "The right context can make a short instruction more powerful than a long one.",
+"example": "“Rewrite this error message for first-time users who may not know what a ‘sync’ is.”"
+},
+{
+"quote": "Specificity is not extra detail; it is detail that changes the answer.",
+"example": "“Recommend a laptop” becomes “Recommend a laptop under $1,000 for frequent travel, long battery life, and everyday spreadsheet work.”"
+},
+{
+"quote": "When a request is vague, the result has to guess.",
+"example": "Instead of “Make this better,” ask “Make this announcement easier to scan while keeping the date, location, and registration instructions unchanged.”"
+},
+{
+"quote": "Make the goal clear before you ask for the route.",
+"example": "“I need to prepare a 10-minute briefing for a budget review. Suggest an outline that highlights costs, risks, and decisions.”"
+},
+{
+"quote": "A strong prompt tells the reader what success should look like.",
+"example": "“Draft a project update that lets a busy manager understand the status, one blocker, and the next milestone in under a minute.”"
+},
+{
+"quote": "Useful information narrows the possibilities that matter.",
+"example": "“Suggest team-building activities” becomes “Suggest three 30-minute activities for a hybrid team of eight that require no special equipment.”"
+},
+{
+"quote": "If a sentence could fit any situation, it may explain none of them.",
+"example": "Instead of “We need better planning,” say “The design review is scheduled before the requirements are approved, so the team may repeat work.”"
+},
+{
+"quote": "Good questions reveal the choices hidden inside a problem.",
+"example": "“Should we launch next month?” becomes “What do we gain and risk by launching next month rather than waiting until the support team is fully trained?”"
+},
+{
+"quote": "The best constraints don’t block ideas; they point them in the right direction.",
+"example": "“Suggest ways to welcome new customers using our existing email platform, with no added software and no more than two staff hours per week.”"
+},
+{
+"quote": "Precision is the art of keeping what matters and removing what doesn’t.",
+"example": "“Summarize this report in 150 words for department leads. Focus on findings that affect next quarter’s staffing plan.”"
+},
+{
+"quote": "A better answer often starts with a better-defined task.",
+"example": "“Help with my presentation” becomes “Create a five-slide outline explaining the project delay, its impact, and the recovery plan.”"
+},
+{
+"quote": "State the audience, purpose, and limits—and let the details do their work.",
+"example": "“Write a plain-language guide for first-time volunteers explaining check-in. Keep it under 300 words and include where to go and whom to ask for help.”"
+},
+{
+"quote": "Clear instructions reduce guesswork for everyone involved.",
+"example": "“Review this draft for spelling and unclear sentences only. Keep the author’s tone and do not add new claims.”"
+},
+{
+"quote": "Information becomes useful when it helps someone decide what to do next.",
+"example": "“Our delivery delays rose last month. Identify the three most useful data points to review before deciding whether to change the shipping process.”"
+},
+{
+"quote": "Think carefully about what the answer needs to know before asking it to respond.",
+"example": "Before asking for a meal plan, specify the number of meals, preparation time, budget, and any ingredients to avoid."
+},
+{
+"quote": "A clear question gives attention somewhere useful to land.",
+"example": "Instead of “Tell me about onboarding,” ask “Which three steps in our new-customer onboarding process cause the most delays, and what evidence supports that?”"
+},
+{
+"quote": "Every detail in a prompt should earn its place.",
+"example": "Include the report’s audience, purpose, and word limit; omit background that does not affect the summary."
+},
+{
+"quote": "Define the decision before gathering the details.",
+"example": "“We need to choose a launch date. Compare these two dates by engineering readiness, customer impact, and support coverage.”"
+},
+{
+"quote": "A useful question makes its boundaries visible.",
+"example": "“Explain renewable energy” becomes “Compare solar and wind power for a small business seeking to reduce daytime electricity costs.”"
+},
+{
+"quote": "Facts, assumptions, and preferences are different kinds of information.",
+"example": "“Fact: the team has four weeks. Assumption: the vendor can deliver the data export. Preference: avoid adding weekend work.”"
+},
+{
+"quote": "The audience changes what counts as a clear answer.",
+"example": "“Explain the outage to customers in plain language, focusing on what happened, what services were affected, and what happens next.”"
+},
+{
+"quote": "A prompt improves when it names the shape of a useful result.",
+"example": "“Return a comparison of the three proposals with columns for cost, timeline, key risk, and open question.”"
+},
+{
+"quote": "Specific examples turn abstract expectations into visible targets.",
+"example": "“Use a direct, practical tone like: ‘Send the draft by Thursday so the team can review it Friday.’”"
+},
+{
+"quote": "A good prompt distinguishes the main task from the supporting material.",
+"example": "“Summarize the attached interview notes in five themes. Use the project brief only to clarify terminology.”"
+},
+{
+"quote": "Useful analysis starts by naming the criteria.",
+"example": "“Assess these vendors on implementation time, accessibility, annual cost, and data portability.”"
+},
+{
+"quote": "When priorities compete, say which one leads.",
+"example": "“Keep the explanation under 200 words; prioritize accuracy over covering every background detail.”"
+},
+{
+"quote": "A well-framed problem points toward a relevant solution.",
+"example": "“Meeting notes are often missing action owners. Suggest a lightweight process that captures an owner and due date for each task.”"
+},
+{
+"quote": "Ask for uncertainty to be shown, not hidden.",
+"example": "“Separate confirmed information from estimates, and flag any conclusion that depends on an unverified assumption.”"
+},
+{
+"quote": "The most helpful summary preserves decisions, not just discussion.",
+"example": "“Summarize the meeting under three labels: decisions made, actions with owners, and unresolved questions.”"
+},
+{
+"quote": "A question becomes actionable when it connects insight to a next step.",
+"example": "“What is the most common reason customers abandon checkout, and what small test could help us investigate it?”"
+},
+{
+"quote": "Comparisons are clearer when they use the same measuring stick.",
+"example": "“Compare both project plans using the same criteria: delivery date, staffing needs, dependencies, and major risks.”"
+},
+{
+"quote": "Name what must stay unchanged when asking for a revision.",
+"example": "“Shorten this announcement by about a third while preserving the date, eligibility rules, and registration link.”"
+},
+{
+"quote": "A prompt should distinguish what to produce from what to avoid.",
+"example": "“Write a neutral product description for first-time buyers. Avoid unsupported performance claims and unexplained technical terms.”"
+},
+{
+"quote": "Useful questions make room for more than one plausible answer.",
+"example": "“Give two possible explanations for the increase in support requests, along with evidence that would help distinguish them.”"
+},
+{
+"quote": "Clear thinking turns a pile of details into a structure people can use.",
+"example": "“Organize these research notes by customer need, supporting observation, and possible product implication.”"
+}
+]

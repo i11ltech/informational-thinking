@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Google Analytics (GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L4F3PLYSRN"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L4F3PLYSRN');
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Informational Thinking</title>
@@ -23,10 +31,8 @@
   <section class="hero">
     <h1>Informational Thinking</h1>
     <p class="tagline">
-      Want to get better at AI?<br>
-      Improve your IQ (Informational Quotient)<br>
-      Write sharper prompts, Get smarter response<br>
-      because AI is only as smart as the context you give it
+      Want to get better at AI? &nbsp;&nbsp; Improve your IQ (Informational Quotient)<br>
+      Write sharper prompts, Get smarter response...because AI is only as smart as the context you give it
     </p>
     <img src="assets/hero.png" alt="Informational Thinking" class="hero-img">
   </section>
@@ -37,15 +43,35 @@
       <p>The principles, in two sections: do the right thing, and do the thing right.</p>
       <span class="card-cta">Start reading →</span>
     </a>
+    <a class="card" href="prompt-iq.html">
+      <h2>Prompt IQ</h2>
+      <p>The same thinking, applied to the prompts you write.</p>
+      <span class="card-cta">Sharpen your prompts →</span>
+    </a>
     <a class="card" href="blog.html">
       <h2>The Blog</h2>
       <p>Posts that take one idea from the book and apply it to a real situation.</p>
       <span class="card-cta">Read the posts →</span>
     </a>
   </section>
+
+  <!-- Filled by carousel.js with 6 random quotes from carousel.json -->
+  <section class="carousel" id="carousel" aria-roledescription="carousel" aria-label="Quotes and example prompts" hidden>
+    <button type="button" class="carousel-refresh" id="carouselRefresh" aria-label="Show 6 new quotes" title="Show 6 new quotes">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36L21 8"/><path d="M21 3v5h-5"/></svg>
+    </button>
+    <div class="carousel-track" id="carouselTrack" tabindex="0"></div>
+    <div class="carousel-controls">
+      <button type="button" id="carouselPrev" aria-label="Previous quote">←</button>
+      <div class="carousel-dots" id="carouselDots"></div>
+      <button type="button" id="carouselNext" aria-label="Next quote">→</button>
+    </div>
+  </section>
 </main>
 
 <footer class="site-footer">informationalthink.ing</footer>
+
+<script src="carousel.js"></script>
 
 </body>
 </html>
