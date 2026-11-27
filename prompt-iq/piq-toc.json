@@ -16,22 +16,27 @@
     ]
   },
   {
-    "section": "Part II: Informational Prompt",
+    "section": "Part II: The Informational Thinking Hats",
+    "items": [
+      { "id": "t1", "title": "Prelude: Data is in the Details", "file": "t1-data-is-in-the-details.md" },
+      { "id": "t2", "title": "Systems Thinking", "file": "t2-systems-thinking.md" },
+      { "id": "t3", "title": "Analytical Thinking", "file": "t3-analytical-thinking.md" },
+      { "id": "t4", "title": "Probabilistic and Deterministic Thinking", "file": "t4-probabilistic-and-deterministic-thinking.md" },
+      { "id": "t5", "title": "Critical Thinking", "file": "t5-critical-thinking.md" },
+      { "id": "t6", "title": "Strategic Thinking", "file": "t6-strategic-thinking.md" },
+      { "id": "t7", "title": "Design Thinking", "file": "t7-design-thinking.md" },
+      { "id": "t8", "title": "Paradoxical Thinking", "file": "t8-paradoxical-thinking.md" },
+      { "id": "t9", "title": "Example Activities with Thinking Sequence", "file": "t9-example-activities-with-thinking-sequence.md" }
+    ]
+  },
+  {
+    "section": "Part III: Adding the Right Information",
     "items": [
       { "id": "i1", "title": "Context Without Clutter", "file": "i1-context-without-clutter.md" },
       { "id": "i2", "title": "Defining the Audience and Purpose", "file": "i2-audience-and-purpose.md" },
       { "id": "i3", "title": "Making Constraints Explicit", "file": "i3-making-constraints-explicit.md" },
       { "id": "i4", "title": "Examples, References and Source Material", "file": "i4-examples-references-sources.md" },
       { "id": "i5", "title": "Choosing the Output Format", "file": "i5-choosing-the-output-format.md" }
-    ]
-  },
-  {
-    "section": "Part III: Types of Prompts",
-    "items": [
-      { "id": "t1", "title": "Zero-Shot Prompting", "file": "t1-zero-shot-prompting.md" },
-      { "id": "t2", "title": "Few-Shot Prompting", "file": "t2-few-shot-prompting.md" },
-      { "id": "t3", "title": "Role Prompting", "file": "t3-role-prompting.md" },
-      { "id": "t4", "title": "Chain-of-Thought Prompting", "file": "t4-chain-of-thought-prompting.md" }
     ]
   },
   {

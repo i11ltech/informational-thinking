@@ -37,7 +37,7 @@
 },
 {
 "quote": "A strong prompt tells the reader what success should look like.",
-"example": "“Draft a project update that lets a busy manager understand the status, one blocker, and the next milestone in under a minute.”"
+"example": "“Draft a reply to this customer complaint. It succeeds if the customer knows what we will do, by when, and whom to contact.”"
 },
 {
 "quote": "Useful information narrows the possibilities that matter.",
@@ -45,7 +45,7 @@
 },
 {
 "quote": "If a sentence could fit any situation, it may explain none of them.",
-"example": "Instead of “We need better planning,” say “The design review is scheduled before the requirements are approved, so the team may repeat work.”"
+"example": "Instead of “How can we plan better?”, ask “Our design review happens before requirements are approved, so work gets repeated. How should we reorder these two steps?”"
 },
 {
 "quote": "Good questions reveal the choices hidden inside a problem.",
@@ -77,15 +77,7 @@
 },
 {
 "quote": "Think carefully about what the answer needs to know before asking it to respond.",
-"example": "Before asking for a meal plan, specify the number of meals, preparation time, budget, and any ingredients to avoid."
-},
-{
-"quote": "A clear question gives attention somewhere useful to land.",
-"example": "Instead of “Tell me about onboarding,” ask “Which three steps in our new-customer onboarding process cause the most delays, and what evidence supports that?”"
-},
-{
-"quote": "Every detail in a prompt should earn its place.",
-"example": "Include the report’s audience, purpose, and word limit; omit background that does not affect the summary."
+"example": "“Create a five-day dinner plan for two: 30 minutes of preparation at most, under $60 in total, and no nuts.”"
 },
 {
 "quote": "Define the decision before gathering the details.",
@@ -109,7 +101,7 @@
 },
 {
 "quote": "Specific examples turn abstract expectations into visible targets.",
-"example": "“Use a direct, practical tone like: ‘Send the draft by Thursday so the team can review it Friday.’”"
+"example": "“Write the reminder email in a direct, practical tone, like this line: ‘Send the draft by Thursday so the team can review it Friday.’”"
 },
 {
 "quote": "A good prompt distinguishes the main task from the supporting material.",
@@ -140,12 +132,8 @@
 "example": "“What is the most common reason customers abandon checkout, and what small test could help us investigate it?”"
 },
 {
-"quote": "Comparisons are clearer when they use the same measuring stick.",
-"example": "“Compare both project plans using the same criteria: delivery date, staffing needs, dependencies, and major risks.”"
-},
-{
 "quote": "Name what must stay unchanged when asking for a revision.",
-"example": "“Shorten this announcement by about a third while preserving the date, eligibility rules, and registration link.”"
+"example": "“Shorten this contract summary to 100 words. Don’t change any dates, amounts or names of the parties.”"
 },
 {
 "quote": "A prompt should distinguish what to produce from what to avoid.",
@@ -158,5 +146,97 @@
 {
 "quote": "Clear thinking turns a pile of details into a structure people can use.",
 "example": "“Organize these research notes by customer need, supporting observation, and possible product implication.”"
+},
+{
+"quote": "An answer can only be as specific as the situation you describe.",
+"example": "“Suggest a weekly schedule for a two-person bakery that opens at 7 a.m., closes on Mondays, and bakes bread the night before.”"
+},
+{
+"quote": "If anyone could have sent your prompt, the answer will be written for anyone.",
+"example": "Instead of “Write a cover letter,” ask “Write a cover letter for a junior data analyst role, drawing on my three years in retail operations and my SQL course.”"
+},
+{
+"quote": "Share the details the task needs, not the ones it doesn’t.",
+"example": "“Summarize these case notes for a policy review. I’ve replaced names and employee IDs with [NAME] and [ID].”"
+},
+{
+"quote": "Give the model a role when the role changes what it should notice.",
+"example": "“Act as a first-time user reviewing this sign-up page. List every point where you would hesitate or be unsure what to do next.”"
+},
+{
+"quote": "The first answer is a draft; the follow-up is where you steer.",
+"example": "“Good start. Drop the third option, which needs budget we don’t have, and expand the second into steps for next week.”"
+},
+{
+"quote": "Big tasks get better answers one step at a time.",
+"example": "“First, list the questions this proposal must answer for the board. Don’t draft anything yet.”"
+},
+{
+"quote": "When a problem keeps coming back, ask about the system, not the event.",
+"example": "“Our support backlog keeps growing even after we hired two people. Map the handoffs and incentives that could be feeding it.”"
+},
+{
+"quote": "Ask why more than once before you accept a cause.",
+"example": "“Our release slipped because testing ran late. Ask ‘why’ four more times and show the chain of causes.”"
+},
+{
+"quote": "Ask for the case against your plan before you commit to it.",
+"example": "“Here is our plan to move every team to weekly releases. Give the strongest argument against it.”"
+},
+{
+"quote": "Imagine the failure first; it shows you what to protect.",
+"example": "“Imagine this product launch has failed six months from now. List the three most likely reasons.”"
+},
+{
+"quote": "A confident tone is not the same as a certain answer.",
+"example": "“For each recommendation, say how confident you are and what evidence would change your view.”"
+},
+{
+"quote": "Start from the person’s friction, not from the feature.",
+"example": "“Describe our check-in process from the point of view of a parent arriving late with two children. Where does it break down?”"
+},
+{
+"quote": "When you are stuck between two options, ask for a third.",
+"example": "“We need faster approvals and tighter spending control. Don’t choose between them; propose a process that serves both.”"
+},
+{
+"quote": "Every yes spends something you could have used elsewhere.",
+"example": "“We can build only one of these three features this quarter. For each, say what we give up by choosing it.”"
+},
+{
+"quote": "Remove the noise before you ask for the signal.",
+"example": "“From these survey comments, set aside general praise and one-off requests. Group the complaints that appear more than once.”"
+},
+{
+"quote": "Data becomes information when it answers a question someone has.",
+"example": "“Here are last quarter’s sales by region. Which figures matter for deciding where to hire our next sales rep?”"
+},
+{
+"quote": "Point the model to its sources, and ask it to stay inside them.",
+"example": "“Answer using only the attached policy document. If it doesn’t cover the question, say so.”"
+},
+{
+"quote": "Choose the format by how the answer will be used.",
+"example": "“Give me a checklist I can print and tick off during the office move, grouped by room.”"
+},
+{
+"quote": "The same facts need different words for different readers.",
+"example": "“Explain the new expense policy twice: once for managers who approve claims, and once for staff who submit them.”"
+},
+{
+"quote": "Context you set once can shape every answer after it.",
+"example": "“For this conversation: I manage six nurses in a small clinic. Keep all advice practical and within our current staffing.”"
+},
+{
+"quote": "Let the model ask before it guesses.",
+"example": "“Before you draft the plan, ask me up to five questions about anything you would otherwise have to assume.”"
+},
+{
+"quote": "Check the answer against the question you asked, not against how good it sounds.",
+"example": "“Review your previous answer against my original request. List anything I asked for that it missed.”"
+},
+{
+"quote": "An average can hide the story; ask for the breakdown.",
+"example": "“Average delivery time looks steady. Split it by region and carrier, and show where it rose.”"
 }
 ]

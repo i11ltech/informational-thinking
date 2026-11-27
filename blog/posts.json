@@ -1,4 +1,4 @@
 [
-  { "id": "blog1", "title": "Blog post 1 (placeholder)", "date": "", "chapter": "a1", "summary": "Placeholder. Replace with a post that extends one book concept.", "file": "blog1.md" },
-  { "id": "blog2", "title": "Blog post 2 (placeholder)", "date": "", "chapter": "b1", "summary": "Placeholder. Replace with a post that extends one book concept.", "file": "blog2.md" }
+  { "id": "blog1", "title": "A Gym for Your Thinking", "date": "2026-11-27", "chapter": "about", "summary": "Why informational thinking matters now that we hand more thinking to AI, and one exercise to start.", "file": "blog1.md" },
+  { "id": "blog2", "title": "Blog post 2 (placeholder)", "date": "", "chapter": "b1", "summary": "Coming soon...", "file": "blog2.md" }
 ]

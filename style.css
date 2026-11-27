@@ -250,6 +250,11 @@ a {
   border-radius: 8px;
 }
 
+.blog-hero-img {
+  max-width: 25%;
+  border-radius: 8px;
+}
+
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

@@ -38,9 +38,9 @@ Raising the first is how you exercise the second.
 ## How this book is built
 
 * **[Part I: The Foundations](#f1):** what makes a prompt informative, its parts, and the difference between commanding a model and steering it.
-* **Part II: Informational Prompt:** each part of a prompt in turn: context, audience and purpose, constraints, examples and format.
-* **Part III: Types of Prompts:** common techniques, seen as different ways of giving the model information.
-* **Part IV: Beyond Prompt Engineering:** from writing one prompt to shaping everything the model knows.
+* **[Part II: The Informational Thinking Hats](#t1):** the kinds of thinking that decide what goes into a prompt: attention to detail, systems, analytical, probabilistic and deterministic, critical, strategic, design and paradoxical thinking, and how to combine them in a sequence.
+* **[Part III: Adding the Right Information](#i1):** each part of a prompt in turn: context, audience and purpose, constraints, examples and format.
+* **[Part IV: Beyond Prompt Engineering](#c1):** from writing one prompt to shaping everything the model knows.
 
 
 
