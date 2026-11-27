@@ -28,6 +28,8 @@ Two things stand out to me.
 
 **Second, building the factory is thinking one level up.** If you direct the work instead of doing it, the quality of your direction becomes the quality of the result. That means a clear goal, the right context, honest constraints and a definition of done. Vague direction gets you a confident factory turning out the wrong thing.
 
+Microsoft's answer to the skills gap is telling. Satya also spoke about a new program, [preceptorship for AI-accelerated development](https://newsletter.pragmaticengineer.com/p/software-engineering-after-code-becomes). The idea is borrowed from nursing, where new nurses are paired with experienced ones to build real-world experience and confidence. Here, experienced software engineers act as preceptors. They coach "preceptees" to use AI tools thoughtfully while building strong systems thinking, taste and judgement. Note what is being passed on. It isn't which buttons to press. It's judgement: what to ask for, what to check, and when to say no. That is the muscle this site trains, and it works well as a shared reference for both sides of that pairing.
+
 His advice for getting ahead with AI was to stop reading and listening about it, and start using it more. I'd add one thing: use it *informationally*.
 
 
